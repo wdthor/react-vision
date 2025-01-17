@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "format": "pnpm biome format ./src",
+    "format:fix": "pnpm biome format --write ./src",
+    "lint": "pnpm biome lint ./src",
+    "lint:fix": "pnpm biome lint --write ./src",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,6 +17,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@eslint/js": "^9.17.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
