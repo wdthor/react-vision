@@ -1,5 +1,14 @@
+import { Navigation } from './components/Navigation/Navigation.tsx';
+
 function App() {
-  return <h1>React Vision</h1>;
+  return (
+    <main>
+      <Navigation />
+      {/* <Logo />
+      <ImageLinkForm />
+      <FaceRecognition /> */}
+    </main>
+  );
 }
 
 export default App;
